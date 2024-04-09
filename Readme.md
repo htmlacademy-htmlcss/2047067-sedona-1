@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Anastasiia Chernnekova](https://up.htmlacademy.ru/htmlcss-individual/1/user/2047067).
-* Наставник: [Анна Лисененкова] (https://htmlacademy.ru/profile/ankhena).
+* Студент: [Anastasiia Chernenkova](https://up.htmlacademy.ru/htmlcss-individual/1/user/2047067).
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
