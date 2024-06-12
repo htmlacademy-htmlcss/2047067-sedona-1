@@ -8,18 +8,21 @@
   <body>
     <header class="page-header">
       <a class="logo-link" href="#"><img class="logo" src="images/logo.svg" width="138" height="64" alt="Логотип Седона"></a>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">О Седоне</a></li>
-          <li class="nav-item"><a class="nav-link" href="catalog.html">Гостиницы</a></li>
-        </ul>
-        <a href="#" class="search"><span class="visually-hidden">Поиск</span></a>
-        <a href="#" class="favorite"><span class="visually-hidden">Избранное</span></a>
-        <a href="#" class="btn btn-choose">Хочу сюда!</a>
-      </nav>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">О Седоне</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalog.html">Гостиницы</a></li>
+          </ul>
+          <ul class="nav-user">
+            <li class="nav-item"><a href="#" class="search"><span class="visually-hidden">Поиск</span></a></li>
+            <li class="nav-item"><a href="#" class="favorite"><span class="visually-hidden">Избранное</span></a></li>
+            <li class="nav-item"><a href="#" class="btn btn-choose">Хочу сюда!</a></li>
+          </ul>
+        </nav>
     </header>
-    <main class="index">
+    <main class="index main-container">
+      <div class="page-container">
       <section class="hero">
         <h1 class="hero-title visually-hidden">Седона</h1>
         <img class="hero-lettering" src="images/hero-lettering.png" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks">
@@ -29,26 +32,30 @@
         <p class="advantages-description description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="advantages-list">
           <li class="advantages-item">
-            <h3 class="item-title advantages-item-title">Настоящий городок</h3>
-            <p class="advantages-item-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <h3 class="item-title advantages-item-title">Настоящий городок</h3>
+              <p class="advantages-item-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </li>
+          <li class="advantages-item advantages-img advantages-img-1">
             <img class="advantages-item-img" src="images/advantages-1.jpg" width="800" height="385" alt="Улица в городе Седона">
           </li>
           <li class="advantages-item">
-            <h3 class="item-title advantages-item-title">Небольшая площадь</h3>
-            <p class="advantages-item-text item-text">Все достопримечательности находятся очень близко</p>
+              <h3 class="item-title advantages-item-title">Небольшая площадь</h3>
+              <p class="advantages-item-text item-text">Все достопримечательности находятся очень близко</p>
           </li>
           <li class="advantages-item">
-            <h3 class="item-title advantages-item-title">Красивая дорога</h3>
-            <p class="advantages-item-text item-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <h3 class="item-title advantages-item-title">Красивая дорога</h3>
+              <p class="advantages-item-text item-text">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!</p>
           </li>
           <li class="advantages-item">
-            <h3 class="item-title advantages-item-title">Мало туристов</h3>
-            <p class="advantages-item-text item-text">Большинство едет в Гранд Каньон и толпится там</p>
+              <h3 class="item-title advantages-item-title">Мало туристов</h3>
+              <p class="advantages-item-text item-text">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
+          <li class="advantages-item advantages-img advantages-img-2">
+            <img class="advantages-item-img" src="images/advantages-2.jpg" width="800" height="385"  alt="Мост дьявола в Седоне">
+        </li>
           <li class="advantages-item">
               <h3 class="item-title advantages-item-title">Там есть мост дьявола</h3>
               <p class="advantages-item-text item-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-              <img class="advantages-item-img" src="images/advantages-2.jpg" width="800" height="385"  alt="Мост дьявола в Седоне">
           </li>
         </ul>
       </section>
@@ -73,20 +80,26 @@
       <section class="search">
         <h2 class="search-title title">Заинтересовались?</h2>
         <p class="search-description description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="btn btn-search" href="catalog.html">Поиск гостиницы в Седоне</a>
+        <a class="btn btn-search" href="catalog.html"><span>Поиск гостиницы в Седоне</span></a>
       </section>
+    </div>
     </main>
+
     <footer class="page-footer">
       <section class="subscribe">
         <h2 class="subscribe-title title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form action="https://echo.htmlacademy.ru/" method="post">
-          <input type="email" name="email" value="Ваш email">
-          <button class="btn btn-subscribe" type="submit">Подписаться</button>
+        <div class="subscribe-wrapper">
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <div class="form-wrapper">
+            <input type="email" name="email" value="Ваш email">
+            <button class="btn btn-subscribe" type="submit">Подписаться</button>
+          </div>
         </form>
+        </div>
       </section>
       <section class="social">
-        <h2 class="visually-hidden">Социальные сети</h2>
+        <h2 class="visually-hidden" hidden>Социальные сети</h2>
         <ul class="social">
           <li class="social-item">
             <a href="https://vk.com/htmlacademy" class="social-link">
