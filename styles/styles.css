@@ -22,15 +22,9 @@ html {
 
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+  height: 100%;
   font-family: "PT Sans", sans-serif;
   background-color: #fff;
-}
-
-.main-container {
-  flex-grow: 1;
 }
 
 ul {
@@ -104,9 +98,16 @@ select {
 }
 
 .page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 70px 30px;
+  padding: 0 70px;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 /* header */
@@ -173,6 +174,7 @@ select {
   background-repeat: no-repeat;
   background-color: #756157;
   margin-bottom: 70px;
+  padding: 50px 70px 25px;
 }
 
 .hero-lettering {
@@ -326,7 +328,14 @@ select {
   background-repeat: no-repeat;
   background-color: #756157;
   padding: 96px 0 104px;
-  margin-bottom: 40px;
+  margin-bottom: 0;
+}
+
+.inner-subscribe {
+  padding: 96px 0 0;
+  margin-bottom: 104px;
+  background-image: none;
+  background-color: #fff;
 }
 
 .subscribe-title {
@@ -334,10 +343,18 @@ select {
   color: #fff;
 }
 
+.inner-subscribe-title {
+  color: #000;
+}
+
 .subscribe-description {
   margin: 0 auto 54px;
   max-width: 475px;
   color: #fff;
+}
+
+.inner-subscribe-description {
+  color: #000;
 }
 
 .subscribe-wrapper {
@@ -370,7 +387,6 @@ select {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 70px 30px;
 }
 
 .address {
@@ -383,7 +399,7 @@ select {
 
 .inner-housing {
   background-image: url(../images/catalog-header.jpg);
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #756157;
   padding: 35px 70px 70px;
@@ -580,12 +596,17 @@ color: #000;
 }
 
 .catalog-housing {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 /* pagination */
 
 .pagination {
+  padding: 40px 70px 0;
+  margin-bottom: 60px;
+}
+
+.pagination-list {
   display: flex;
 }
 
@@ -613,11 +634,6 @@ color: #000;
 
 /* footer */
 
-.inner-subscribe-title {
-  margin: 0 auto 20px;
-}
-
-.inner-subscribe-description {
-  margin: 0 auto 54px;
-  max-width: 475px;
+.page-footer {
+  padding: 40px 70px 30px;
 }
