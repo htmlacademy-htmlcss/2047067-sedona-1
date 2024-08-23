@@ -8,16 +8,16 @@
   <body>
     <div class="page-container">
       <header class="page-header">
-        <a class="logo-link" href="#"><img class="logo" src="images/logo.svg" width="138" height="64" alt="Логотип Седона"></a>
+        <a class="logo-link" href="#"><img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седона"></a>
         <nav class="nav">
           <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">О Седоне</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">О&nbsp;Седоне</a></li>
             <li class="nav-item"><a class="nav-link" href="catalog.html">Гостиницы</a></li>
           </ul>
           <ul class="nav-user">
-            <li class="nav-item"><a href="#" class="search"><span class="visually-hidden">Поиск</span></a></li>
-            <li class="nav-item"><a href="#" class="favorite"><span class="visually-hidden">Избранное</span></a></li>
+            <li class="nav-item"><a href="#" class="nav-user-btn user-search"><span class="visually-hidden">Поиск</span></a></li>
+            <li class="nav-item"><a href="#" class="nav-user-btn user-favorite"><span class="visually-hidden">Избранное</span></a></li>
             <li class="nav-item"><a href="#" class="btn btn-choose">Хочу сюда!</a></li>
           </ul>
         </nav>
@@ -36,8 +36,9 @@
           </ul>
 
           <form class="housing-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="form-wrapper-left">
             <fieldset class="catalog-infrastructure">
-              <legend class="infrastructure-title catalog-subtitle">Инфраструктура</legend>
+              <legend class="infrastructure-title catalog-subtitle">Инфраструктура:</legend>
               <ul class="infrastructure-list">
                 <li class="infrastructure-item">
                   <label class="control">
@@ -61,7 +62,7 @@
             </fieldset>
 
             <fieldset class="catalog-type">
-              <legend class="type-title catalog-subtitle">Тип жилья</legend>
+              <legend class="type-title catalog-subtitle">Тип жилья:</legend>
               <ul class="catalog-list">
                 <li class="catalog-item">
                   <label class="control">
@@ -83,13 +84,19 @@
                 </li>
               </ul>
             </fieldset>
+          </div>
 
+            <div class="form-wrapper-right">
             <fieldset class="catalog-price">
               <legend class="price-title catalog-subtitle">Стоимость, ₽:</legend>
-              <input type="number" class="input-min" id="input-min-id" value="0" min="0" max="9000"><label for="input-min-id">от</label>
-              <input type="number" class="input-max" id="input-max-id" value="9000" min="0" max="9000"><label for="input-max-id">до</label>
-              <input type="range" class="range-min" min="0" max="9000" value="0" step="1">
-              <input type="range" class="range-max" min="0" max="9000" value="7500" step="1">
+              <div class="catalog-price-screen">
+                <input type="number" class="input-min" id="input-min-id" value="0" min="0" max="9000"><label for="input-min-id">от</label>
+                <input type="number" class="input-max" id="input-max-id" value="9000" min="0" max="9000"><label for="input-max-id">до</label>
+              </div>
+              <div class="catalog-price-range">
+                <input type="range" class="range-min" min="0" max="9000" value="0" step="1">
+                <input type="range" class="range-max" min="0" max="9000" value="7500" step="1">
+              </div>
             </fieldset>
 
             <div class="catalog-btn-wrapper">
@@ -97,6 +104,7 @@
               <button class="btn-reset btn" type="reset">Сбросить</button>
             </div>
           </form>
+        </div>
         </div>
 
         <section class="catalog-sort">
@@ -108,15 +116,22 @@
 
           <div class="view-style">
             <h2 class="view-style-title visually-hidden" hidden>Показать</h2>
-            <a href="#" class="icon icon-list">
-              <span class="visually-hidden">Списком</span>
-            </a>
-            <a class="icon icon-preview" href="#">
-              <span class="visually-hidden">Превью</span>
-            </a>
-            <a class="icon icon-cards" href="#">
-              <span class="visually-hidden">Карточками</span>
-            </a>
+            <ul class="view-style-list">
+              <li class="view-style-item">
+                <a href="#" class="view-style-icon icon-list">
+                <span class="visually-hidden">Списком</span>
+              </a></li>
+              <li class="view-style-item">
+                <a class="view-style-icon icon-preview" href="#">
+                  <span class="visually-hidden">Превью</span>
+                </a>
+              </li>
+              <li class="view-style-item">
+                <a class="view-style-icon icon-cards" href="#">
+                  <span class="visually-hidden">Карточками</span>
+                </a>
+              </li>
+            </ul>
           </div>
         </section>
 
@@ -127,7 +142,7 @@
                 <img class="hotel-card-image" src="images/hotel-amara.jpg" width="300" height="212" alt="Гостиница Amara Resort Spa">
               </a>
               <a class="card-title-link" href="#" tabindex="-1">
-                <h3 class="hotel-card-title">Amara Resort &amp;&nbsp;Spa</h3>
+                <h3 class="hotel-card-title">Amara Resort&amp;Spa</h3>
               </a>
               <div class="card-descr-wrapper">
                 <p class="hotel-card-type">Гостиница</p>
@@ -187,7 +202,7 @@
         <div class="pagination">
           <ul class="pagination-list">
             <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
+              <a class="pagination-link pagination-current" href="#">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
@@ -235,7 +250,7 @@
       <footer class="page-footer">
         <section class="social">
           <h2 class="visually-hidden" hidden>Социальные сети</h2>
-          <ul class="social-list">
+          <ul class="social">
             <li class="social-item">
               <a href="https://vk.com/htmlacademy" class="social-link">
                 <span class="visually-hidden">ВКонтакте</span>
@@ -253,9 +268,9 @@
             </li>
           </ul>
           <address class="address"><a href="tel:+78128121212">+7 (812) 812-12-12</a></address>
-            <a href="https://htmlacademy.ru/" class="developer-link">
-              <img src="images/footer-logo.svg" width="115" height="33" alt="Логотип HTML Academy" class="developer-img">
-            </a>
+          <a href="https://htmlacademy.ru/" class="developer-link">
+            <img src="images/footer-logo.svg" width="115" height="33" alt="Логотип HTML Academy" class="developer-img">
+          </a>
         </section>
       </footer>
     </div>
