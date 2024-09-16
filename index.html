@@ -8,16 +8,16 @@
   <body>
     <div class="page-container">
       <header class="page-header">
-        <a class="logo-link" href="#"><img class="logo" src="images/logo.svg" width="138" height="64" alt="Логотип Седона"></a>
+        <a class="logo-link" href="#"><img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седона"></a>
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">О Седоне</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">О&nbsp;Седоне</a></li>
             <li class="nav-item"><a class="nav-link" href="catalog.html">Гостиницы</a></li>
           </ul>
           <ul class="nav-user">
-            <li class="nav-item"><a href="#" class="search"><span class="visually-hidden">Поиск</span></a></li>
-            <li class="nav-item"><a href="#" class="favorite"><span class="visually-hidden">Избранное</span></a></li>
+            <li class="nav-item"><a href="#" class="nav-user-btn user-search"><span class="visually-hidden">Поиск</span></a></li>
+            <li class="nav-item"><a href="#" class="nav-user-btn user-favorite"><span class="visually-hidden">Избранное</span></a></li>
             <li class="nav-item"><a href="#" class="btn btn-choose">Хочу сюда!</a></li>
           </ul>
         </nav>
@@ -92,14 +92,10 @@
         <section class="subscribe">
           <h2 class="subscribe-title title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <div class="subscribe-wrapper">
-            <form action="https://echo.htmlacademy.ru/" method="post">
-              <div class="form-wrapper">
-                <input type="email" name="email" value="Ваш email">
-                <button class="btn btn-subscribe" type="submit">Подписаться</button>
-              </div>
+            <form class="form-wrapper" action="https://echo.htmlacademy.ru/" method="post">
+              <input type="email" name="email" value="Ваш email">
+              <button class="btn btn-subscribe" type="submit">Подписаться</button>
             </form>
-          </div>
         </section>
       </main>
 
