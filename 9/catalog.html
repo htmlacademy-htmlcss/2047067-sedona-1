@@ -17,14 +17,15 @@
             <li class="nav-item"><a class="nav-link nav-link-current" href="catalog.html">Гостиницы</a></li>
           </ul>
           <ul class="nav-user">
-            <li class="nav-item"><a href="#" class="nav-user-btn user-search"><span class="visually-hidden">Поиск</span></a></li>
+            <li class="nav-item">
+              <a href="#" class="nav-user-btn user-search">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
             <li class="nav-item">
               <a href="#" class="nav-user-btn user-favorite">
-              <span class="visually-hidden">Избранное</span>
-              <div class="user-in-fav">
                 <span class="visually-hidden">Гостиниц в избранном</span>
                 <span class="fav-number">12</span>
-              </div>
               </a>
             </li>
             <li class="nav-item"><a href="#" class="btn btn-choose">Хочу сюда!</a></li>
@@ -33,16 +34,11 @@
       </header>
 
       <main class="main-inner main-container">
-        <div class="inner-housing">
           <div class="inner-housing-content">
           <h1 class="inner-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link breadcrumbs-link-main" href="index.html">
-                <svg width="13" height="12" viewBox="0 0 13 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6.39282 0L0.392822 5.80006V12.0001H12.3928V5.80006L6.39282 0ZM11.3928 11.0001H1.39282V6.20005L6.39282 1.4L11.3928 6.20005V11.0001Z" fill="currentColor"/>
-                  <path d="M4.39282 10.0001H5.39282V7.50005H7.39282V10.0001H8.39282V6.50005H4.39282V10.0001Z" fill="currentColor"/>
-                  </svg>
                 <span class="visually-hidden">Главная</span></a>
             </li>
             <li class="breadcrumbs-item">
@@ -111,10 +107,15 @@
                   <label>до</label>
                 </div>
               </div>
-
-              <div class="catalog-price-range">
-                <input type="range" class="range-min" min="0" max="9000" value="0" step="1">
-                <input type="range" class="range-max" min="0" max="9000" value="9000" step="1">
+              <div class="range-scale">
+                <div class="range-bar" style="width: 226px">
+                  <button class="range-toggle toggle-min">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle toggle-max">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
               </div>
             </fieldset>
 
@@ -124,7 +125,6 @@
             </div>
           </form>
           </div>
-        </div>
 
         <section class="catalog-hotels">
           <div class="catalog-sort">
@@ -139,58 +139,15 @@
               <ul class="view-style-list">
                 <li class="view-style-item">
                   <a href="#" class="view-style-icon icon-list">
-                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_137673_508)">
-                      <path d="M4 0H0V6H4V0Z" fill="black"/>
-                      <path d="M16 0H12V6H16V0Z" fill="black"/>
-                      <path d="M10 0H6V6H10V0Z" fill="black"/>
-                      <path d="M4 8H0V14H4V8Z" fill="black"/>
-                      <path d="M16 8H12V14H16V8Z" fill="black"/>
-                      <path d="M10 8H6V14H10V8Z" fill="black"/>
-                      </g>
-                      <defs>
-                      <clipPath id="clip0_137673_508">
-                      <rect width="16" height="14" fill="white"/>
-                      </clipPath>
-                      </defs>
-                      </svg>
                   <span class="visually-hidden">Списком</span>
                 </a></li>
                 <li class="view-style-item">
                   <a class="view-style-icon icon-preview" href="#">
-                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_137673_449)">
-                      <path d="M16 12H0V14H16V12Z" fill="black"/>
-                      <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
-                      </g>
-                      <defs>
-                      <clipPath id="clip0_137673_449">
-                      <rect width="16" height="14" fill="white"/>
-                      </clipPath>
-                      </defs>
-                      </svg>
                     <span class="visually-hidden">Превью</span>
                   </a>
                 </li>
                 <li class="view-style-item">
                   <a class="view-style-icon icon-cards" href="#">
-                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_137673_503)">
-                      <path d="M2 0H0V2H2V0Z" fill="black"/>
-                      <path d="M16 0H4V2H16V0Z" fill="black"/>
-                      <path d="M2 4H0V6H2V4Z" fill="black"/>
-                      <path d="M16 4H4V6H16V4Z" fill="black"/>
-                      <path d="M2 8H0V10H2V8Z" fill="black"/>
-                      <path d="M16 8H4V10H16V8Z" fill="black"/>
-                      <path d="M2 12H0V14H2V12Z" fill="black"/>
-                      <path d="M16 12H4V14H16V12Z" fill="black"/>
-                      </g>
-                      <defs>
-                      <clipPath id="clip0_137673_503">
-                      <rect width="16" height="14" fill="white"/>
-                      </clipPath>
-                      </defs>
-                      </svg>
                     <span class="visually-hidden">Карточками</span>
                   </a>
                 </li>
@@ -211,9 +168,9 @@
                   <p class="hotel-card-price">От&nbsp;4000&nbsp;₽</p>
                   <a class="card-more btn" href="#">Подробнее</a>
                   <button type="button" class="card-favorite-btn btn">В&nbsp;избранное</button>
-                  <div class="hotel-stars hotel-stars-four">
+                  <p class="hotel-stars hotel-stars-four">
                     <span class="hotel-stars-amount visually-hidden">Отель четыре звезды</span>
-                  </div>
+                  </p>
                   <p class="hotel-card-rating">Рейтинг: 8,5</p>
                 </div>
               </li>
@@ -229,9 +186,9 @@
                   <p class="hotel-card-price">От&nbsp;5000&nbsp;₽</p>
                   <a class="card-more btn" href="#">Подробнее</a>
                   <button type="button" class="favorite-btn-active btn">В&nbsp;избранном</button>
-                  <div class="hotel-stars hotel-stars-four">
+                  <p class="hotel-stars hotel-stars-four">
                     <span class="hotel-stars-amount visually-hidden">Отель четыре звезды</span>
-                  </div>
+                  </p>
                   <p class="hotel-card-rating">Рейтинг: 9,2</p>
                 </div>
               </li>
@@ -247,9 +204,9 @@
                   <p class="hotel-card-price">От&nbsp;2500&nbsp;₽</p>
                   <a class="card-more btn" href="#">Подробнее</a>
                   <button type="button" class="card-favorite-btn btn">В&nbsp;избранное</button>
-                  <div class="hotel-stars hotel-stars-three">
+                  <p class="hotel-stars hotel-stars-three">
                     <span class="hotel-stars-amount visually-hidden">Отель три звезды</span>
-                  </div>
+                  </p>
                   <p class="hotel-card-rating">Рейтинг: 6,9</p>
                 </div>
               </li>
@@ -265,9 +222,9 @@
                   <p class="hotel-card-price">От&nbsp;1500&nbsp;₽</p>
                   <a class="card-more btn" href="#">Подробнее</a>
                   <button type="button" class="card-favorite-btn btn">В&nbsp;избранное</button>
-                  <div class="hotel-stars hotel-stars-two">
+                  <p class="hotel-stars hotel-stars-two">
                     <span class="hotel-stars-amount visually-hidden">Отель две звезды</span>
-                  </div>
+                  </p>
                   <p class="hotel-card-rating">Рейтинг: 5,0</p>
                 </div>
               </li>
@@ -301,7 +258,7 @@
           <div class="subscribe-wrapper">
             <form action="https://echo.htmlacademy.ru/" method="post">
               <div class="form-wrapper">
-                <input type="email" name="email" value="Ваш email">
+                <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
                 <button class="btn btn-subscribe" type="submit">Подписаться</button>
               </div>
             </form>
@@ -331,7 +288,8 @@
           </ul>
           <address class="address"><a href="tel:+78128121212">+7 (812) 812-12-12</a></address>
           <a href="https://htmlacademy.ru/" class="developer-link">
-            <svg width="115" height="34" viewBox="0 0 115 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <svg width="115" height="34" viewBox="0 0 115 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logo-title">
+              <title id="logo-title">HTML Academy — логотип</title>
               <g clip-path="url(#clip0_33515_1190)">
               <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" fill="currentColor"/>
               <path d="M11.6 4.85645C10 4.85645 8.8 5.55645 8 6.55645H7.9V0.356445H5.9V15.8564H7.9V10.5564C7.9 8.45645 9.2 6.95645 11.2 6.95645C13 6.95645 14.1 8.35645 14.1 10.1564V15.8564H16.1V9.75644C16.2 6.75644 14.3 4.85645 11.6 4.85645Z" fill="currentColor"/>

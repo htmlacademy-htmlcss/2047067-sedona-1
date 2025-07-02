@@ -17,16 +17,17 @@
             <li class="nav-item"><a class="nav-link" href="catalog.html">Гостиницы</a></li>
           </ul>
           <ul class="nav-user">
-            <li class="nav-item"><a href="#" class="nav-user-btn user-search"><span class="visually-hidden">Поиск</span></a></li>
-            <li class="nav-item">
-              <a href="#" class="nav-user-btn user-favorite">
-              <span class="visually-hidden">Избранное</span>
-              <div class="user-in-fav">
-                <span class="visually-hidden">Гостиниц в избранном</span>
-                <span class="fav-number">12</span>
-              </div>
-              </a>
-            </li>
+              <li class="nav-item">
+                <a href="#" class="nav-user-btn user-search">
+                  <span class="visually-hidden">Поиск</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-user-btn user-favorite">
+                  <span class="visually-hidden">Гостиниц в избранном</span>
+                  <span class="fav-number">12</span>
+                </a>
+              </li>
             <li class="nav-item"><a href="#" class="btn btn-choose">Хочу сюда!</a></li>
           </ul>
         </nav>
@@ -34,10 +35,8 @@
 
       <main class="index main-container">
         <section class="hero">
-          <div class="hero-content">
             <h1 class="hero-title visually-hidden">Седона</h1>
-            <img class="hero-lettering" src="images/hero-lettering.png" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks">
-          </div>
+            <img class="hero-lettering" src="images/hero-lettering.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks">
           </section>
         <section class="advantages">
           <h2 class="advantages-title title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -104,7 +103,7 @@
           <h2 class="subscribe-title title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description description">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="form-wrapper" action="https://echo.htmlacademy.ru/" method="post">
-              <input type="email" name="email" value="Ваш email">
+              <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
               <button class="btn btn-subscribe" type="submit">Подписаться</button>
             </form>
         </section>
@@ -132,7 +131,8 @@
           </ul>
           <address class="address"><a href="tel:+78128121212">+7 (812) 812-12-12</a></address>
           <a href="https://htmlacademy.ru/" class="developer-link">
-            <svg width="115" height="34" viewBox="0 0 115 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <svg width="115" height="34" viewBox="0 0 115 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logo-title">
+              <title id="logo-title">HTML Academy — логотип</title>
               <g clip-path="url(#clip0_33515_1190)">
               <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" fill="currentColor"/>
               <path d="M11.6 4.85645C10 4.85645 8.8 5.55645 8 6.55645H7.9V0.356445H5.9V15.8564H7.9V10.5564C7.9 8.45645 9.2 6.95645 11.2 6.95645C13 6.95645 14.1 8.35645 14.1 10.1564V15.8564H16.1V9.75644C16.2 6.75644 14.3 4.85645 11.6 4.85645Z" fill="currentColor"/>
