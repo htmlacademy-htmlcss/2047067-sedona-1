@@ -19,12 +19,115 @@
               <li class="nav-item">
                 <a href="#" class="nav-user-btn user-search">
                   <span class="visually-hidden">Поиск</span>
+
+
+                <div class="modal-container modal-container-close">
+                  <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+                  <button class="modal-close-button">
+                    <span class="visually-hidden">Закрыть.</span>
+                  </button>
+                  <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+
+                    <fieldset class="field-group">
+            <label class="search-form-label" for="data-in">Дата заезда:</label>
+            <input class="search-form-field search-form-field-icon" type="text" id="data-in"
+                   name="data-in" placeholder="27 апреля 2020">
+            <span class="form-description search-form-error">Мы не можем отправить вас в прошлое.</span>
+                    </fieldset>
+                    <fieldset class="field-group">
+            <label class="search-form-label" for="data-out">Дата выезда:</label>
+            <input class="search-form-field search-form-field-icon" type="text" id="data-out"
+                   name="data-out" placeholder="1 сентября 2021">
+            <span class="form-description">На эти даты есть свободные номера. Пока есть.</span>
+                    </fieldset>
+                    <fieldset class=" field-group field-group-adult">
+                      <label class="search-form-label label-adult" for="adult">Взрослые:</label>
+                      <div class="group-wrapper group-wrapper-adults">
+                      <button class="search-button search-button-minus">
+                      <span class="visually-hidden">Уменьшить количество посетителей.</span>
+                      </button>
+                      <input class="search-form-field number-person" type="number" id="adult" name="adult" placeholder="2">
+                      <button class="search-button search-button-plus">
+                      <span class="visually-hidden">Увеличить количество посетителей.</span>
+              </button>
+              </div>
+            </fieldset>
+
+            <fieldset class="field-group field-group-children">
+            <span class="search-form-label form-label-icon">
+              <label class="search-form-label label-child" for="children">Дети:</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+            </span>
+            <div class="group-wrapper group-wrapper-children">
+              <button class="search-button search-button-minus">
+                <span class="visually-hidden">Уменьшить количество посетителей.</span>
+              </button>
+              <input class="search-form-field number-person" type="number" id="children"
+                     name="children" placeholder="1">
+              <button class="search-button search-button-plus">
+                <span class="visually-hidden">Увеличить количество посетителей.</span>
+              </button>
+              </div>
+            </fieldset>
+            <button class="button search-submit" type="submit">Найти</button>
+                  </form>
+                  </div>
+
+
+
+
+
+
+
+
+
+                  <!--<div class="popover-search">
+                    <h2 class="popover-title">Поиск гостиницы в Седоне</h2>
+                    <button class="popover-close-btn btn">
+                      <span class="visually-hidden">Закрыть</span>
+                    </button>
+
+
+
+                    <form class="popover-search-form" action="https://echo.htmlacademy.ru/" method="post">
+                      <fieldset class="popover-field checkin-field">
+                        <label class="form-label" for="checkin-date">Дата Заезда:</label>
+                        <input class="field-input checkin-field" type="text" id="checkin-date" name="checkin-date" placeholder="27 апреля 2020">
+                        <p class="date-available">Мы не можем отправить вас в прошлое.</p>
+                      </fieldset>
+                      <fieldset class="popover-field checkout-field">
+                        <label class="form-label" for="checkout-date">Дата Выезда:</label>
+                        <input class="field-input checkout-field" type="text" id="checkout-date" name="checkout-date" placeholder="1 сентября 2023">
+                        <p class="date-available">На эти даты есть свободные номера. Пока есть.</p>
+                      </fieldset>
+                      <fieldset class="popover-field adults-field">
+                          <label for="adults" class="form-label">Взрослые:</label>
+                          <div class="quantity-controls">
+                            <button type="button" class="quantity-btn btn minus">–</button>
+                            <input class="quantity-input" type="number" id="adults" name="adults" min="1" value="2" readonly>
+                            <button type="button" class="quantity-btn btn plus">+</button>
+                          </div>
+                      </fieldset>
+                      <fieldset class="popover-field children-field">
+                          <label for="children" class="form-label">Дети:</label>
+                          <div class="quantity-controls">
+                            <button type="button" class="quantity-btn minus">–</button>
+                            <input class="quantity-input" type="number" id="children" name="children" min="1" value="2" readonly>
+                            <button type="button" class="quantity-btn plus">+</button>
+                          </div>
+                      </fieldset>
+                      <button class="button search-submit" type="submit">Найти</button>
+                    </div>
+                    </form>-->
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-user-btn user-favorite">
                   <span class="visually-hidden">Гостиниц в избранном</span>
-                  <span class="fav-number">12</span>
+                  <span class="favorite-number">12</span>
                 </a>
               </li>
             <li class="nav-item"><a href="#" class="btn btn-choose">Хочу сюда!</a></li>
@@ -96,7 +199,8 @@
         <section class="search">
           <h2 class="search-title title">Заинтересовались?</h2>
           <p class="search-description description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="btn btn-search" href="catalog.html"><span>Поиск гостиницы в Седоне</span></a>
+          <a class="btn btn-search" href="catalog.html"><span>Поиск гостиницы в Седоне</span>
+          </a>
         </section>
         <section class="subscribe">
           <h2 class="subscribe-title title">Подпишитесь на рассылку</h2>
