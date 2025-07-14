@@ -98,21 +98,21 @@
             <fieldset class="catalog-price">
               <legend class="price-title catalog-subtitle">Стоимость, ₽:</legend>
               <div class="catalog-price-screen">
-                <div class="price-input-wrapper">
-                  <input type="number" class="price-input input-min" value="0" min="0" max="9000">
-                  <label>от</label>
+                <div class="price-input-wrapper" tabindex="0">
+                  <input type="number" class="price-input input-min" id="minprice" value="0" min="0" max="9000">
+                  <label for="minprice">от</label>
                 </div>
-                <div class="price-input-wrapper">
-                  <input type="number" class="price-input input-max" value="9000" min="0" max="9000">
-                  <label>до</label>
+                <div class="price-input-wrapper" tabindex="0">
+                  <input type="number" class="price-input input-max" id="maxprice" value="9000" min="0" max="9000">
+                  <label for="maxprice">до</label>
                 </div>
               </div>
               <div class="range-scale">
                 <div class="range-bar" style="width: 226px">
-                  <button class="range-toggle toggle-min">
+                  <button class="range-toggle toggle-min" type="button">
                     <span class="visually-hidden">Изменить минимальную цену.</span>
                   </button>
-                  <button class="range-toggle toggle-max">
+                  <button class="range-toggle toggle-max" type="button">
                     <span class="visually-hidden">Изменить максимальную цену.</span>
                   </button>
                 </div>
@@ -139,7 +139,7 @@
               <ul class="view-style-list">
                 <li class="view-style-item">
                   <a href="#" class="view-style-icon icon-list">
-                  <span class="visually-hidden">Списком</span>
+                  <span class="visually-hidden">Карточками</span>
                 </a></li>
                 <li class="view-style-item">
                   <a class="view-style-icon icon-preview" href="#">
@@ -148,7 +148,7 @@
                 </li>
                 <li class="view-style-item">
                   <a class="view-style-icon icon-cards" href="#">
-                    <span class="visually-hidden">Карточками</span>
+                    <span class="visually-hidden">Списком</span>
                   </a>
                 </li>
               </ul>
@@ -211,7 +211,7 @@
                 </div>
               </li>
               <li class="hotel-card">
-                <a class="hotel-card-link" href="#">
+                <a class="hotel-card-link" href="#" tabindex="-1">
                   <img class="hotel-card-image" src="images/hotel-greentree.jpg" width="300" height="212" alt="Изображение гостиницы GreenTree Inn">
                 </a>
                 <a class="card-title-link" href="#" tabindex="-1">
@@ -258,6 +258,7 @@
           <div class="subscribe-wrapper">
             <form action="https://echo.htmlacademy.ru/" method="post">
               <div class="form-wrapper">
+                <label class="visually-hidden" for="newsletter-email">Ваш e-mail</label>
                 <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
                 <button class="btn btn-subscribe" type="submit">Подписаться</button>
               </div>
