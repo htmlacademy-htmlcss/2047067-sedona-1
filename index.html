@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" href="/images/favikon.png">
   </head>
   <body>
     <div class="page-container">
@@ -176,13 +177,13 @@
               <span class="form-description">На эти даты есть свободные номера. Пока есть.</span>
             </fieldset>
 
-            <fieldset class=" field-group field-group-adult">
+            <fieldset class="field-group field-group-adult">
               <label class="search-form-label label-adult" for="adult">Взрослые:</label>
                 <div class="group-wrapper group-wrapper-adults">
                   <button class="btn search-button search-button-minus" type="button">
                     <span class="visually-hidden">Уменьшить количество посетителей.</span>
                   </button>
-                  <input class="number-person" type="number" id="adult" name="adult" placeholder="2">
+                  <input class="number-person" type="number" id="adult" name="adult" placeholder=" " value="2" min="0">
                   <button class="btn search-button search-button-plus" type="button">
                     <span class="visually-hidden">Увеличить количество посетителей.</span>
                   </button>
@@ -201,7 +202,7 @@
                 <button class="btn search-button search-button-minus" type="button">
                   <span class="visually-hidden">Уменьшить количество посетителей.</span>
                 </button>
-                <input class="number-person" type="number" id="children" name="children" placeholder="2">
+                <input class="number-person" type="number" id="children" name="children" placeholder=" " value="2" min="0">
                 <button class="btn search-button search-button-plus" type="button">
                   <span class="visually-hidden">Увеличить количество посетителей.</span>
                 </button>
