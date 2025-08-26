@@ -366,7 +366,7 @@ body {
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-.advantages-item:has(img) .advantages-item-title::after {
+.advantages-item:has(.advantages-item-img) .advantages-item-title::after {
   border-bottom-color: rgba(255, 255, 255, 0.3);
 }
 
